@@ -90,8 +90,8 @@ public class RoundedFrameLayout extends FrameLayout {
         mRevealPath.reset();
         mRevealPath.addRoundRect(pathRect, mRadius, Path.Direction.CW);
 
-        //canvas.clipPath(mRevealPath);
-        canvas.clipRect(pathRect);
+        canvas.clipPath(mRevealPath);
+        //canvas.clipRect(pathRect);
 
         boolean isInvalided = super.drawChild(canvas, child, drawingTime);
 
